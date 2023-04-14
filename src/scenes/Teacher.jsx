@@ -24,7 +24,7 @@ const Teach = () => {
     <Box m="10px">
       <Header
         title="Teachers"
-      />
+      />  
      
     </Box>
   );

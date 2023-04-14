@@ -11,6 +11,9 @@ import StatBox from '../../components/StatBox';
 import ProgressCircle from '../../components/ProgressCircle';
 import DeviceThermostatIcon from '@mui/icons-material/DeviceThermostat';
 import MAP from '../../data/pic/MAP.png'
+import BIGMAP from '../../data/pic/big-map.png'
+import './index.css';
+
 const Dashboard = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
@@ -60,14 +63,47 @@ const Dashboard = () => {
           backgroundColor={colors.primary[400]}>
           
                        
-            <img src={MAP} alt="Logo" style={{ width: "115.5%",height:"600px" }} />
+            {/* <img src={MAP} alt="Logo" style={{ width: "115.5%",height:"600px" }} /> */}
+            <div class="main-map">
+            <img src={BIGMAP} alt="hcmut-map" />
+            <a href="./1"><div class="building onetwo"></div></a>
+            <a href="./8"> <div class="building eight"></div></a>
+       <a href="./B1"><div class="building b1"></div></a>
+       <a href="./B2"><div class="building b2"></div></a>
+       <a href="./B3"><div class="building b3"></div></a>
+       <a href="./B4"><div class="building b4"></div></a>
+       <a href="./B6"><div class="building b6"></div></a>
+       <a href="./B7"><div class="building b7"></div></a>
+       <a href="./B8"><div class="building b8"></div></a>
+       <a href="./B9"><div class="building b9"></div></a>
+       <a href="./B10"> <div class="building b10"></div></a>
+       <a href="./B11"><div class="building b11"></div></a>
+       <a href="./B12"> <div class="building b12"></div></a>
+       <a href="./A5"><div class="building a5"></div></a>
+       <a href="./A1"><div class="building a1"></div></a>
+       <a href="./A2"><div class="building a2"></div></a>
+      <a href="./A4"><div class="building a4"></div></a>
+      <a href="./A3"><div class="building a3"></div></a>
+      <a href="./C1"><div class="building c1"></div></a>
+      <a href="./C2"><div class="building c2"></div></a>
+      <a href="./C3"><div class="building c3"></div></a>
+      <a href="./C4"><div class="building c4"></div></a>
+      <a href="./C5"><div class="building c5"></div></a>
+      <a href="./C6"><div class="building c6"></div></a>
+      <a href="./C7"><div class="building c7"></div></a>
+      <a href="./C8"><div class="building c8"></div></a>
+      <a href="./C9"><div class="building c9"></div></a>
+      <a href="./C10"><div class="building c10"></div></a>
+      <a href="./C11"><div class="building c11"></div></a>
+      <a href="./ki"><div class="building kios"></div></a>
+    </div>
           
                 
         </Box>
 
         <Box
           gridColumn="span 3"
-          gridRow="span 3"
+          gridRow="span 2"
           backgroundColor={colors.primary[400]}
           overflow="auto">
           <Box
