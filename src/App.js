@@ -27,6 +27,7 @@ import C6 from './scenes/C6';
 import Kios from './scenes/KIOS';
 import NPKL from './scenes/NPKL';
 import Reactec from './scenes/Reactec';
+import Teach from './scenes/Teacher';
 import { CssBaseline, ThemeProvider } from '@mui/material';
 import { ColorModeContext, useMode } from './theme';
 function App() {
@@ -44,6 +45,10 @@ function App() {
               <Route
                 path="/"
                 element={<Dashboard />}
+              />
+               <Route
+                path="/teach"
+                element={<Teach />}
               />
               <Route
                 path="/8"

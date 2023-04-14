@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import 'react-pro-sidebar/dist/css/styles.css';
 import { tokens } from '../../theme';
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
-
+import PeopleOutlinedIcon from '@mui/icons-material/PeopleOutlined';
 import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
 import MapOutlinedIcon from '@mui/icons-material/MapOutlined';
 
@@ -84,6 +84,13 @@ const Sidebar = () => {
               title="MAP"
               to="/"
               icon={<MapOutlinedIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+            <Item
+              title="TEACHERS"
+              to="/teach"
+              icon={<PeopleOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
