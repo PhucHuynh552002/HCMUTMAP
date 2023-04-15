@@ -10,8 +10,8 @@ const A1 = () => {
   const colors = tokens(theme.palette.mode);
 
   const columns = [
-    { field: 'id', headerName: 'ID', flex: 0.5 },
-    { field: 'registrarId', headerName: 'Registrar ID' },
+    { field: 'email', headerName: 'ID1', flex: 0.5 },
+    { field: 'faculty', headerName: 'Registrar ID' },
     {
       field: 'name',
       headerName: 'Name',

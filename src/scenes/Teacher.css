@@ -1,0 +1,67 @@
+.table-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    
+    .search-bar-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    }
+    
+    table {
+    font-family: Tahoma, sans-serif;
+    font-size: 16px;
+    color: #F9F6EF;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+    width: 100%;
+    max-width: 1500px;
+    table-layout: fixed;
+    }
+    
+    th, td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    text-align: left;
+    max-width: 500px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    }
+    
+    
+
+    
+    .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    }
+    
+    .page-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    margin: 0 0.5rem;
+    }
+    
+    button {
+    padding: 0.5rem;
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    }
+    
+    button:hover {
+    background-color: #ddd;
+    }
+    
+    button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+    }
