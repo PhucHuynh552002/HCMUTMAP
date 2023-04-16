@@ -1,82 +1,48 @@
-import { Box, Typography, useTheme } from "@mui/material";
-import { DataGrid } from "@mui/x-data-grid";
-import { tokens } from "../theme";
-import { mockDataInvoices } from "../data/mockData";
-import Header from "../components/Header";
-
+import { Box } from '@mui/material';
+import Header from '../components/Header';
+import b11 from '../data/pic/B11/toa-b11.jpg';
+import b11a from '../data/pic/B11/toa-b11a.jpg';
+import sa4 from '../data/pic/B11/b11.png';
 const B11 = () => {
-  const theme = useTheme();
-  const colors = tokens(theme.palette.mode);
-  const columns = [
-    { field: "id", headerName: "ID" },
-    {
-      field: "name",
-      headerName: "Name",
-      flex: 1,
-      cellClassName: "name-column--cell",
-    },
-    {
-      field: "phone",
-      headerName: "Phone Number",
-      flex: 1,
-    },
-    {
-      field: "email",
-      headerName: "Email",
-      flex: 1,
-    },
-    {
-      field: "cost",
-      headerName: "Cost",
-      flex: 1,
-      renderCell: (params) => (
-        <Typography color={colors.greenAccent[500]}>
-          ${params.row.cost}
-        </Typography>
-      ),
-    },
-    {
-      field: "date",
-      headerName: "Date",
-      flex: 1,
-    },
-  ];
 
   return (
+    <div>
     <Box m="20px">
-      <Header title="INVOICES" subtitle="List of Invoice Balances" />
       <Box
-        m="40px 0 0 0"
-        height="75vh"
-        sx={{
-          "& .MuiDataGrid-root": {
-            border: "none",
-          },
-          "& .MuiDataGrid-cell": {
-            borderBottom: "none",
-          },
-          "& .name-column--cell": {
-            color: colors.greenAccent[300],
-          },
-          "& .MuiDataGrid-columnHeaders": {
-            backgroundColor: colors.blueAccent[700],
-            borderBottom: "none",
-          },
-          "& .MuiDataGrid-virtualScroller": {
-            backgroundColor: colors.primary[400],
-          },
-          "& .MuiDataGrid-footerContainer": {
-            borderTop: "none",
-            backgroundColor: colors.blueAccent[700],
-          },
-          "& .MuiCheckbox-root": {
-            color: `${colors.greenAccent[200]} !important`,
-          },
-        }}
-      >
-        <DataGrid checkboxSelection rows={mockDataInvoices} columns={columns} />
+        display="flex"
+        justifyContent="space-between"
+        alignItems="center">
+        <Header
+          title="B11"
+          subtitle="Chương trình Quốc tế/Phòng hội nghị"
+        />
       </Box>
+      <Box
+        display="flex">
+        <Box
+        display="flex"
+        justifyContent= 'center'
+        alignItems="center"
+          gridColumn="span 15"
+          gridRow="span 15">
+          <div class="main-map" style={{ textAlign: 'center', alignItems: 'center' }}>
+            <Header title= "Ảnh toà nhà"></Header>
+            <Box style={{display: 'flex'}}>
+              <img src={b11}  alt="A3" style={{width: "45%", height: "50%", marginLeft:"0%"}}/>
+              <img src={b11a}  alt="A3" style={{width: "45%", height: "50%", marginLeft:"5%"}}/>
+              </Box>
+              <br></br>
+              <Header title= "Sơ đồ B11"></Header>
+              <Box>
+              <img src={sa4}  alt="A3" style={{width: "100%", height: "100%"}}/>
+              </Box>
+          </div>    
+        </Box>
+
+      </Box>
+
     </Box>
+        </div>
   );
 };
 

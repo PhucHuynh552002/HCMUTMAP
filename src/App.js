@@ -30,6 +30,7 @@ import Reactec from './scenes/Reactec';
 import Teach from './scenes/Teacher';
 import { CssBaseline, ThemeProvider } from '@mui/material';
 import { ColorModeContext, useMode } from './theme';
+import TBI from './scenes/TBI';
 function App() {
   const [theme, colorMode] = useMode();
   const [isSidebar, setIsSidebar] = useState(true);
@@ -49,6 +50,10 @@ function App() {
                <Route
                 path="/teach"
                 element={<Teach />}
+              />
+              <Route
+                path="/1"
+                element={<TBI />}
               />
               <Route
                 path="/8"

@@ -193,12 +193,6 @@ const Sidebar = () => {
               setSelected={setSelected}
             />
             <Item
-              title="B11"
-              to="/B11"
-              icon={<HomeOutlinedIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            /><Item
               title="B12"
               to="/B12"
               icon={<HomeOutlinedIcon />}
@@ -237,6 +231,13 @@ const Sidebar = () => {
             /><Item
               title="C6"
               to="/C6"
+              icon={<HomeOutlinedIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+            <Item
+              title="HCMUT-TBI"
+              to="/1"
               icon={<HomeOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}

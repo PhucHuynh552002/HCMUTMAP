@@ -1,75 +1,72 @@
-import React, { useState} from 'react';
-import './Teacher.css';
-import { mockDataContacts } from '../data/mockData';
+import { Box, useTheme } from "@mui/material";
+import { DataGrid } from "@mui/x-data-grid";
+import { tokens } from "../theme";
+import { TeacherInfo } from "../data/mockData";
+import Header from "../components/Header";
+import React from 'react';
 
-const data = mockDataContacts;
-
-function Teach() {
-  const [currentPage, setCurrentPage] = useState(1);
-  const [searchQuery, setSearchQuery] = useState("");
-
-  const itemsPerPage = 10;
-  const pageCount = Math.ceil(data.length / itemsPerPage);
-
-  const filteredData = data.filter((item) =>
-    item.name.toLowerCase().includes(searchQuery.toLowerCase())
-  );
-
-  const startIndex = (currentPage - 1) * itemsPerPage;
-  const endIndex = startIndex + itemsPerPage;
-  const currentData = filteredData.slice(startIndex, endIndex);
+const Teacher = () => {
+  const theme = useTheme();
+  const colors = tokens(theme.palette.mode);
+  const columns = [
+    {
+      field: "name",
+      headerName: "Name",
+      flex: 1,
+      cellClassName: "name-column--cell",
+    },
+       {
+      field: "email",
+      headerName: "Email",
+      flex: 1,
+    },
+    {
+      field: "faculty",
+      headerName: "Faculty",
+      flex: 1,
+    },
+  ];
 
   return (
-    <div className="table-container">
-      <input
-        type="text"
-        placeholder="Search"
-        value={searchQuery}
-        onChange={(e) => setSearchQuery(e.target.value)}
-      />
-      <table>
-        <thead>
-          <tr>
-            <th>Giáo viên</th>
-            <th>Email</th>
-            <th>Khoa</th>
-          </tr>
-        </thead>
-        <tbody>
-          {currentData.map((item, index) => (
-            <tr key={index}>
-              <td>{item.name}</td>
-              <td>{item.email}</td>
-              <td>{item.faculty}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-      <div className="pagination">
-        <button
-          onClick={() => setCurrentPage((currentPage) => currentPage - 1)}
-          disabled={currentPage === 1}
-        >
-          Prev
-        </button>
-        {Array.from({ length: pageCount }, (_, index) => (
-          <button
-            key={index}
-            onClick={() => setCurrentPage(index + 1)}
-            disabled={currentPage === index + 1}
-          >
-            {index + 1}
-          </button>
-        ))}
-        <button
-          onClick={() => setCurrentPage((currentPage) => currentPage + 1)}
-          disabled={currentPage === pageCount}
-        >
-          Next
-        </button>
-      </div>
-    </div>
+    <Box m="20px">
+      <Header title="Teachers" subtitle="List of teachers" />
+      <div>
+  <input type="text" placeholder="Search..." />
+  <button>Go</button>
+</div>
+      <Box
+        m="40px 0 0 0"
+        height="75vh"
+        sx={{
+          "& .MuiDataGrid-root": {
+            border: "none",
+          },
+          "& .MuiDataGrid-cell": {
+            borderBottom: "none",
+          },
+          "& .name-column--cell": {
+            color: colors.greenAccent[300],
+          },
+          "& .MuiDataGrid-columnHeaders": {
+            backgroundColor: colors.blueAccent[700],
+            borderBottom: "none",
+          },
+          "& .MuiDataGrid-virtualScroller": {
+            backgroundColor: colors.primary[400],
+          },
+          "& .MuiDataGrid-footerContainer": {
+            borderTop: "none",
+            backgroundColor: colors.blueAccent[700],
+          },
+          "& .MuiCheckbox-root": {
+            color: `${colors.greenAccent[200]} !important`,
+          },
+        }}
+      >
+        <DataGrid  rows={TeacherInfo} columns={columns} />
+      </Box>
+    </Box>
   );
-}
+};
 
-export default Teach;
+export default Teacher;

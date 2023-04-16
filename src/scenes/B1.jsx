@@ -32,7 +32,7 @@ const B1 = () => {
               <br></br>
               <Header title= "Sơ đồ B1"></Header>
               <Box>
-              <img src={sa4}  alt="A3" style={{width: "50%", height: "50%", marginLeft:"25%"}}/>
+              <img src={sa4}  alt="A3" style={{width: "100%", height: "100%"}}/>
               </Box>
           </div>    
         </Box>
