@@ -1,7 +1,8 @@
 import { Box } from '@mui/material';
 import Header from '../components/Header';
-import out from '../data/pic/REACTEC/REACTEC.jpg';
-const REACTEC = () => {
+import a from '../data/pic/RECTIE/RECTIE.jpg';
+
+const RECTIE = () => {
 
   return (
     <div>
@@ -11,8 +12,8 @@ const REACTEC = () => {
         justifyContent="space-between"
         alignItems="center">
         <Header
-          title="REACTEC"
-          subtitle="Chương trình Quốc tế/Phòng hội nghị"
+          title="Trung tâm ươm tạo doanh nghiệp công nghệ"
+          subtitle="HCMUT-RECTIE"
         />
       </Box>
       <Box
@@ -23,12 +24,13 @@ const REACTEC = () => {
         alignItems="center"
           gridColumn="span 15"
           gridRow="span 15">
-          <div class="main-map" style={{ textAlign: 'center', alignItems: 'center'}}>
-            <Header title= "Ảnh toà nhà"></Header>
-            <Box style={{display: 'flex'}}>
-              <img src={out}  alt="A3" style={{width: "100%", height: "100%"}}/>
+          <div clasEACTECs="main-map" style={{ textAlign: 'center', alignItems: 'center'}}>
+            <Header title= "Ảnh ngoài"></Header>
+            <Box>
+              <img src={a}  alt="A3" style={{width: "60%", height: "60%"}}/>
               </Box>
               <br></br>
+
           </div>    
         </Box>
 
@@ -39,4 +41,4 @@ const REACTEC = () => {
   );
 };
 
-export default REACTEC;
+export default RECTIE;

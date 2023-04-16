@@ -1,7 +1,8 @@
 import { Box } from '@mui/material';
 import Header from '../components/Header';
-import out from '../data/pic/REACTEC/REACTEC.jpg';
-const REACTEC = () => {
+import out from '../data/pic/DCSE/DCSE1.jpg';
+import out2 from '../data/pic/DCSE/DCSE2.jpg';
+const DCSE = () => {
 
   return (
     <div>
@@ -11,7 +12,7 @@ const REACTEC = () => {
         justifyContent="space-between"
         alignItems="center">
         <Header
-          title="REACTEC"
+          title="DCSE"
           subtitle="Chương trình Quốc tế/Phòng hội nghị"
         />
       </Box>
@@ -26,7 +27,8 @@ const REACTEC = () => {
           <div class="main-map" style={{ textAlign: 'center', alignItems: 'center'}}>
             <Header title= "Ảnh toà nhà"></Header>
             <Box style={{display: 'flex'}}>
-              <img src={out}  alt="A3" style={{width: "100%", height: "100%"}}/>
+              <img src={out}  alt="A3" style={{width: "40%", height: "100%", marginLeft:"5%"}}/>
+              <img src={out2}  alt="A3" style={{width: "40%", height: "100%", marginLeft:"10%"}}/>
               </Box>
               <br></br>
           </div>    
@@ -39,4 +41,4 @@ const REACTEC = () => {
   );
 };
 
-export default REACTEC;
+export default DCSE;

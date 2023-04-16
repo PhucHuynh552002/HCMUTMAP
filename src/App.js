@@ -26,11 +26,17 @@ import C5 from './scenes/C5';
 import C6 from './scenes/C6';
 import Kios from './scenes/KIOS';
 import NPKL from './scenes/NPKL';
-import Reactec from './scenes/Reactec';
+import REACTEC from './scenes/Reactec';
 import Teach from './scenes/Teacher';
 import { CssBaseline, ThemeProvider } from '@mui/material';
 import { ColorModeContext, useMode } from './theme';
 import TBI from './scenes/TBI';
+import RECTIE from './scenes/RECTIE';
+import DCSE from './scenes/DCSE';
+import BDCN from './scenes/BDCN';
+import BRT from './scenes/BRT';
+import DITAGIS from './scenes/DITAGIS';
+import RPTC from './scenes/RPTC';
 function App() {
   const [theme, colorMode] = useMode();
   const [isSidebar, setIsSidebar] = useState(true);
@@ -56,12 +62,36 @@ function App() {
                 element={<TBI />}
               />
               <Route
-                path="/8"
-                element={<NPKL />}
+                path="/2"
+                element={<RECTIE />}
               />
               <Route
+                path="/3"
+                element={<DCSE />}
+              />
+               <Route
                 path="/4"
-                element={<Reactec />}
+                element={<NPKL />}
+              />
+               <Route
+                path="/6"
+                element={<BDCN />}
+              />
+               <Route
+                path="/7"
+                element={<BRT />}
+              />
+              <Route
+                path="/8"
+                element={<REACTEC />}
+              />
+               <Route
+                path="/9"
+                element={<DITAGIS />}
+              />
+               <Route
+                path="/10"
+                element={<RPTC />}
               />
                <Route
                 path="/ki"

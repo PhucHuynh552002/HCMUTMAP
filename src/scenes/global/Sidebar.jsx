@@ -243,8 +243,36 @@ const Sidebar = () => {
               setSelected={setSelected}
             />
             <Item
+              title="RECTIE"
+              to="/2"
+              icon={<HomeOutlinedIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+            <Item
+              title="DCSE"
+              to="/3"
+              icon={<HomeOutlinedIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+            <Item
               title="National Polime Key Lab"
               to="/4"
+              icon={<HomeOutlinedIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+            <Item
+              title="BDCN"
+              to="/6"
+              icon={<HomeOutlinedIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+            <Item
+              title="BRT"
+              to="/7"
               icon={<HomeOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
@@ -252,6 +280,20 @@ const Sidebar = () => {
               <Item
               title="REACTEC"
               to="/8"
+              icon={<HomeOutlinedIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+            <Item
+              title="DITAGIS"
+              to="/9"
+              icon={<HomeOutlinedIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+            <Item
+              title="RPTC"
+              to="/10"
               icon={<HomeOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
