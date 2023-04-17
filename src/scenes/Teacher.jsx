@@ -30,10 +30,6 @@ const Teacher = () => {
   return (
     <Box m="20px">
       <Header title="Teachers" subtitle="List of teachers" />
-      <div>
-  <input type="text" placeholder="Search..." />
-  <button>Go</button>
-</div>
       <Box
         m="40px 0 0 0"
         height="75vh"
