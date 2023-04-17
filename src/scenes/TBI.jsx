@@ -1,7 +1,5 @@
 import { Box } from '@mui/material';
 import Header from '../components/Header';
-import a1 from '../data/pic/TBI/TBI1.png';
-import a2 from '../data/pic/TBI/TBI2.png';
 import a3 from '../data/pic/TBI/TBI3.jpg';
 import a4 from '../data/pic/TBI/TBI4.jpg';
 import a5 from '../data/pic/TBI/TBI5.jpg';
@@ -15,8 +13,8 @@ const TBI = () => {
         justifyContent="space-between"
         alignItems="center">
         <Header
-          title="Trung tâm ươm tạo doanh nghiệp công nghệ"
-          subtitle="HCMUT-TBI"
+          title="HCMUT-TBI"
+          subtitle="Trung tâm Ươm tạo doanh nghiệp công nghệ"
         />
       </Box>
       <Box

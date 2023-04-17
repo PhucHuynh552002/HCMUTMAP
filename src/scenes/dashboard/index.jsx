@@ -26,7 +26,7 @@ const Dashboard = () => {
         justifyContent="space-between"
         alignItems="center">
         <Header
-          title="HCMUT MAP"
+          title="BKMAP"
           subtitle="Welcome"
 
         />

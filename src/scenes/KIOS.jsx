@@ -25,10 +25,10 @@ const Kios = () => {
           gridRow="span 15">
           <div class="main-map" style={{ textAlign: 'center', alignItems: 'center'}}>
             <Header title= "Ảnh toà nhà"></Header>
-            <Box style={{display: 'flex'}}>
-              <img src={out}  alt="A3" style={{width: "100%", height: "100%"}}/>
+            <Box>
+              <img src={out}  alt="a1" style={{width: "50%", height: "50%", marginLeft:"25%"}}/>
+              <p style={{ color: 'white', fontSize: '20px', textAlign: 'center'}}>Giờ làm việc (Thứ 2 - Thứ 6): <br />Sáng: 7h30 - 10h45. <br />Chiều: 13h - 16h15.</p>
               </Box>
-              <br></br>
           </div>    
         </Box>
 

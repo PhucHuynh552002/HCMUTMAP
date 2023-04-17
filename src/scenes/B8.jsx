@@ -13,8 +13,7 @@ const B8 = () => {
         alignItems="center">
         <Header
           title="B8"
-          subtitle="Chương trình Quốc tế/Phòng hội nghị"
-        />
+          subtitle="Khoa Kỹ thuật Địa chất và Dầu khí" />
       </Box>
       <Box
         display="flex">
@@ -32,7 +31,7 @@ const B8 = () => {
               <br></br>
               <Header title= "Sơ đồ B8"></Header>
               <Box>
-              <img src={sa4}  alt="A3" style={{width: "50%", height: "50%", marginLeft:"25%"}}/>
+              <img src={sa4}  alt="A3" style={{width: "100%", height: "100%"}}/>
               </Box>
           </div>    
         </Box>
